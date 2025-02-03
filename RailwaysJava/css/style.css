@@ -1,0 +1,55 @@
+/* 
+Colors 
+#EBEFD6 - Light Yellow
+#D8C595 - Orange
+#B6BFA6 - Green
+#505168 - Dark Blue
+#CFB87F - Light Brown
+#957E46 - Dark Brown
+#D2D6C4 - Light Gray
+#8E9093 - Dark Gray
+#EBF0D3 - Difficulty Button Selected
+#29243B - Darker Dark Blue
+#A4A5AC - Light Blue
+#908E95 - Dark Light Blue
+*/
+
+body {
+    background-color: #EBEFD6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 128px;
+    text-transform: uppercase;
+    color: #CFB87F;
+    -webkit-text-stroke: 2px #957E46;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-img {
+    width: 100vw;
+    height: 300px;
+}
+
+#game, #help, #leaderboard, #game-won {
+    display: none;
+}

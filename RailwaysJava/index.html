@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <a href="index.html"><h1>Railways</h1></a>
+    <div id="menu"> 
+        <input type="text" name="player-name" id="player-name-input" placeholder="enter your name!" maxlength="15">
+        <div id="form-container">
+            <div id="difficulty-select-div">
+                <p id="difficulty-select-text">select the difficulty!</p>
+                <div id="select-div">
+                    <input type="radio" id="easy" name="difficulty-select" value="easy" checked>
+                    <label for="easy" class="button difficulty-btn">Easy (5x5)</label>
+                    <input type="radio" id="hard" name="difficulty-select" value="hard">
+                    <label for="hard" class="button difficulty-btn">Hard (7x7)</label>
+                </div>
+            </div>
+            <div id="start-game-div">
+                <button class="button" id="help-button">Help</button>
+                <button class="button button-dark" id="start-button">Start</button>
+                <button class="button button-dark" id="load-button">Load</button>
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="stats-div">
+            <p>Name: <span class="info-span" id="player-name-output"></span> Elapsed Time: <span class="info-span" id="elapsed-time-output">00:00</span></p>
+        </div>
+        <div id="game-table"></div>
+        <div id="game-won">
+            <h3>Congratulations <span id="player-name-output"></span>!</h3>
+            <p>You beat level <span id="level-output">2</span> with a time of <span id="time-output">00:00</span></p>
+        </div>
+        <div id="leaderboard">
+            <h3>Leaderboard for level <span id="level-output"></span></h3>
+            <ol id="leaderboard-list">
+            </ol>
+        </div>
+        <div id="save-div">
+            <p id="save-game-text">Game saved successfully!</p>
+            <button class="button button-dark" id="save-button">Save Game</button>
+        </div>
+    </div>
+    <div id="help">
+        <div>
+            <h2 class="help-title">Rules</h2>
+            <p class="help-paragraph">The aim of the game is to make a connected railway track that goes through every tile on the board. You can achieve this by building/destroying tracks on empty tiles.</p>
+        </div>
+        <div>
+            <h2 class="help-title">Controls</h2>
+            <p class="help-paragraph">You can left-click on a tile to build a track on it. If there are multiple options each left-click will cycle through the options. You can remove a track on a tile by right-clicking on it.</p>
+        </div>
+        <div>
+            <h2 class="help-title">Tiles</h2>
+            <table class="help-table">
+                <tr>
+                    <td class="tile-help"><h3>Empty</h3>You can place any type of track.</td>
+                    <td><img src="img/bg/0.png" alt="An empty tile" class="help-img"></td>
+                </tr>
+                <tr>
+                    <td class="tile-help"><h3>Oasis</h3>You cannot place tracks on this tile.</td>
+                    <td><img src="img/bg/1.png" alt="An oasis tile" class="help-img"></td>
+                </tr>
+                <tr>
+                    <td class="tile-help"><h3>Bridge</h3>You can only place straight tracks in the direction of the bridge.</td>
+                    <td><img src="img/bg/8.png" alt="A bridge tile" class="help-img"></td>
+                </tr>
+                <tr>
+                    <td class="tile-help"><h3>Mountain</h3>You can only place curved tracks in the direction of the canyon.</td>
+                    <td><img src="img/bg/12.png" alt="A mountain tile" class="help-img"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button class="button" id="menu-button">Menu</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

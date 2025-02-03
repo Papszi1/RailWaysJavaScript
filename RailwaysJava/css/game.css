@@ -1,0 +1,64 @@
+#game { 
+    width: 800px;
+    margin: -100px auto;
+}
+
+#stats-div, #leaderboard, #game-won {
+    width: 750px;
+    margin: 10px auto;
+    background-color: white;
+    border: solid 3px #CFB87F;
+    border-radius: 10px;
+    padding: 0 25px;
+    color: #505168;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-span {
+    color: #29243B;
+    font-weight: bold;
+}
+
+#game-table {
+    margin: 20px auto;
+}
+
+#game-table table {
+    border-radius: 10px;
+    border: solid 10px #957E46;
+    box-shadow: 0px 0px 11px 5px rgba(149,126,70,1);
+    margin: auto;
+}
+
+#table7 {
+    width: 700px;
+    height: 700px;
+}
+
+#table5 {
+    width: 500px;
+    height: 500px;
+}
+
+#game-table table td {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+#save-div {
+    width: 100%;
+    text-align: center;
+}
+
+#save-game-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #957E46;
+    margin-bottom: -5px;
+    visibility: hidden;
+}

@@ -1,0 +1,31 @@
+#help {
+    width: 800px;
+    margin: -100px auto;
+    background: white;
+    border: solid 3px #B6BFA6;
+    border-radius: 10px;
+    padding: 25px;
+    color: #505168;
+}
+
+.help-title {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.help-paragraph {
+    font-size: 20px;
+}
+
+.help-img {
+    margin-left: 100px;
+    width: 100px;
+}
+
+.help-table {
+    border-spacing: 20px;
+}
+
+.tile-help {
+    font-size: 20px;
+}

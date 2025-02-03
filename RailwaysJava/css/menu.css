@@ -1,0 +1,110 @@
+#menu {
+    width: 800px;
+    margin: auto;
+}
+
+#player-name-input {
+    width: 750px;
+    margin: auto;
+    border: solid 3px #CFB87F;
+    border-radius: 10px;
+    padding: 0 25px;
+    color: #CFB87F;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+#player-name-input::placeholder {
+    color: #CFB87F;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#player-name-input:focus {
+    outline: none;
+}
+
+#form-container {
+    margin-top: 25px;
+    width: 100%;
+}
+
+#difficulty-select-div {
+    background: white;
+    border: solid 3px #B6BFA6;
+    border-radius: 10px;
+    width: 500px;
+    float: left;
+    text-align: center;
+    padding: 0 25px 20px 25px;
+    height: 251px;
+}
+
+#difficulty-select-text {
+    margin-top: 40px;
+    color: #B6BFA6;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.button {
+    border: solid 3px #B6BFA6;
+    border-radius: 10px;
+    padding: 0 25px;
+    color: #B6BFA6;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ebf0d3;
+    color: #505168;
+}
+
+.difficulty-btn {
+    padding: 20px;
+    margin: 10px;
+}
+
+#select-div {
+    margin-top: 40px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #ebf0d3;
+    color: #505168;
+}
+
+#start-game-div {
+    float: left;
+    width: 220px;
+    margin-left: 20px
+}
+
+#start-game-div .button {
+    width: 104%;
+}
+
+.button-dark {
+    margin-top: 10px;
+    border-color: #908E95;
+    background-color: #A4A5AC;
+    color: white;
+}
+
+.button-dark:hover {
+    border-color: #29243B;
+    background-color: #505168;
+    color: white;
+}
